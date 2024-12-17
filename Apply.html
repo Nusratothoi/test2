@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Based Uk University Selection</title>
+
+    <!-- ICONSCOUT -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+      
+    <!-- Google Font  -->
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+ 
+    <link rel="stylesheet" href="./Css/apply.css">
+</head>
+<body>
+    <!-- Navigator -->
+    <nav>
+        <div class="container nav_containerdiv">
+            <a href="Home.html"> <h4>AI BASED UNIVERSITY <br>  SELECTION </h4></a>
+            <ul class="nav_menu">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Uk_Universities.html">Uk University</a></li>
+                <li><a href="Discover.html">Discover</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Apply.html">Apply</a></li>
+            </ul>
+            <button id="open-menu-btn"> <i class="uil uil-bars"></i> </button>
+            <button id="close-menu-btn"> <i class="uil uil-multiply"></i> </button>
+
+        </div>
+    </nav>
+
+    <!-- FORM -->
+     <div class="container form__container">
+        <form id="Form1">
+            <h3>Complete Your Profile</h3>
+
+            <label for="country">Select Country</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select Country</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+            </select>
+
+
+            <label for="state">Select State</label>
+            <select id="state" name="state" required>
+                <option value="" disabled selected>Select State</option>
+                <option value="state1">State 1</option>
+                <option value="state2">State 2</option>
+                <option value="state3">State 3</option>
+            </select>
+
+            <label for="city">City *</label>
+            <input type="text" id="city" name="city" placeholder="Enter City" required>
+
+            <label for="address">Address *</label>
+            <input type="text" id="address" name="address" placeholder="Enter Address" required>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-continue" id="Next1">Next</button>
+            </div>
+
+        </form>
+
+<!-- Form 02 -->
+
+        <form id="Form2">
+            <h3>What Would You Like to study?</h3>
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Subject</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Maths">Maths</option>
+                <option value="Physices">Physices</option>
+                <option value="Agricultural Sciences">Agricultural Sciences</option>
+            </select>
+
+
+            <label for="program">Select Your Program</label>
+            <select id="program" name="program" required>
+                <option value="" disabled selected>program</option>
+                <option value="Bachelor">Bachelor</option>
+                <option value="Diploma">Diploma</option>
+                <option value="PHD">PHD</option>
+                <option value="Masters">Masters</option>
+
+            </select>
+
+            <label for="city">Your Desire City*</label>
+            <input type="text" id="city" name="city" placeholder="Enter City" required>
+
+            <label for="university">Your Desire University *</label>
+            <input type="text" id="university" name="university" placeholder="Enter university" required>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-continue" id="Back1">Back</button>
+                <button type="reset" class="btn btn-cancel" id="Next2">Next</button>
+            </div>
+
+        </form>
+
+
+
+<!-- form 03 -->
+
+        <form id="Form3">
+            <h3>Enter Your Score</h3>
+
+            <label for="gpa">GPA Score (max 10) *</label>
+            <input type="number" id="gpa" name="gpa" placeholder="Enter GPA Score" step="0.1" min="0" max="10" required>
+
+
+            <label for="gre">GRE Score (260-340) *</label>
+            <input type="number" id="gre" name="gre" placeholder="Enter GRE Score" min="260" max="340" required>
+
+
+            <label for="ielts">IELTS Score (max 9) *</label>
+            <input type="text" id="city" name="city" placeholder="Enter City" required>
+
+            <label for="toefl">TOEFL Score (max 120) *</label>
+            <input type="number" id="toefl" name="toefl" placeholder="Enter TOEFL Score" min="0" max="120" required>
+
+
+            <label for="sat">SAT Score (400-1600) *</label>
+            <input type="number" id="sat" name="sat" placeholder="Enter SAT Score" min="400" max="1600" required>
+
+
+            <label for="gmat">GMAT Score (200-800) *</label>
+            <input type="number" id="gmat" name="gmat" placeholder="Enter GMAT Score" min="200" max="800" required>
+
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-continue" id="Back2">Back</button>
+                <button type="reset" class="btn btn-cancel" id="Next3">Next</button>
+            </div>
+
+        </form>
+
+
+<!-- Form 04 -->
+
+        <form id="Form4">
+            <h3>Final Step-Upload Your Documents</h3>
+
+            <label for="document">New Document</label>
+            <select id="document" name="document" required>
+                <option value="" disabled selected>Select Country</option>
+                <option value="jpg">jpg</option>
+                <option value="jpeg">jpeg</option>
+                <option value="pdf">pdf</option>
+            </select>
+
+
+            <input type="file" id="file">
+            <label for="state">Upload file</label>
+           
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-continue" id="Back3">Back</button>
+                <button type="reset" class="btn btn-cancel">Submit</button>
+            </div>
+
+        </form>
+
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>step 1</small></div>
+            <div class="step-col"><small>step 2</small></div>
+            <div class="step-col"><small>step 3</small></div>
+            <div class="step-col"><small>step 4</small></div>
+        </div>
+
+
+
+<script>
+    var Form1 = document.getElementById("Form1");
+    var Form2 = document.getElementById("Form2");
+    var Form3 = document.getElementById("Form3");
+    var Form4 = document.getElementById("Form4");
+
+    var Next1 = document.getElementById("Next1");
+    var Next2 = document.getElementById("Next2");
+    var Next3 = document.getElementById("Next3");
+
+    var Back1 = document.getElementById("Back1");
+    var Back2 = document.getElementById("Back2");
+    var Back3 = document.getElementById("Back3");
+
+    var progress = document.getElementById("progress")
+
+
+    Next1.onclick = function(){
+        Form1.style.left = "-450px";
+        Form2.style.left = "40px"
+        progress.style.width="240px";
+
+    }
+    
+    Back1.onclick = function(){
+        Form1.style.left = "40px";
+        Form2.style.left = "450px"
+        progress.style.width="120px";
+
+
+    }
+
+    Next2.onclick = function(){
+        Form2.style.left = "-450px";
+        Form3.style.left = "40px"
+        progress.style.width="360px";
+
+
+    }
+    Back2.onclick = function(){
+        Form2.style.left = "40px";
+        Form3.style.left = "450px"
+        progress.style.width="240px";
+
+    }
+    
+    Next3.onclick = function(){
+        Form3.style.left = "-450px";
+        Form4.style.left = "40px"
+        progress.style.width="480px";
+
+
+    }
+    Back3.onclick = function(){
+        Form3.style.left = "40px";
+        Form4.style.left = "450px"
+        progress.style.width="240px";
+
+    }
+
+</script>
+
+     
+
+     
+
+
+
+
+
+
+</body>
+</html>
